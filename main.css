@@ -1,0 +1,194 @@
+*{
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  background: url(wallpaper1.jpg) center;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Kalam';
+}
+.header{
+  text-align: center;
+}
+
+.navList{
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  border-bottom: 2px solid transparent;
+}
+
+.navList__element{
+  display: inline-block;
+  background-color: rgba(222, 211, 217, 0.6);
+  width: 25%;
+  list-style: none;
+  border-radius: 30px 30px 0px 0px;
+  font-family: 'Kalam';
+  font-weight: bold;
+  padding-top: 1vh;
+  color: rgb(255, 192, 235);
+  text-shadow: 0 0 3px rgba(70, 0, 100, 1);
+}
+
+.mainList{
+  padding-left: 6vw;
+}
+
+.navList, .main, .footer{
+  width: 90vw;
+  margin: 0 5vw;
+}
+
+.main{
+  min-height: 60vh;
+  background-color: rgba(222, 211, 217, 0.6);
+  border-radius: 0 0 40px 40px;
+  padding: 2vh 2vw;
+}
+
+.footer{
+  padding: 1vh 1vw;
+  color: rgba(155, 96, 255, 1);
+  padding-bottom: 0;
+  font-size: 0.7rem;
+}
+
+.header__logo{
+  height: 20vh;
+  width: auto;
+  padding: 3vh 0;
+  filter: brightness(2);
+}
+
+#main__about, #main__skills, #main__hobbies, #main__portfolio{
+  display: none;
+}
+
+a{
+  cursor: pointer;
+}
+
+h1{
+  font-family: 'Sacramento';
+  font-size: 2rem;
+  margin: 1vh 5vw;
+  color: rgb(130, 207, 194);
+  text-shadow: 0 0 3px rgba(70, 0, 100, 1);
+}
+
+p, .mainList{
+  color: rgba(70, 0, 100, 1);  
+  text-shadow: 0 0 3px rgb(255, 192, 235);
+  font-size: 0.8rem;
+}
+
+p{
+  padding: 0 2vw;
+  margin: 0;
+}
+
+.portImage{
+  width: 100%;
+  margin: 1vh auto;
+  border: 1px solid rgb(130, 207, 194);
+  border-radius: 36px;
+}
+
+.container__image{
+  border-radius: 100%;
+  width: 80%;
+  margin: 10%;
+}
+
+.container__quote{
+  font-family: 'Sacramento';
+  font-size: 1.5rem;
+  color: rgba(70, 0, 100, 1);
+  text-shadow: 0 0 3px rgb(255, 192, 235);
+  font-weight: 600;
+}
+
+.container__footer{
+  color: rgba(70, 0, 100, 1);
+  padding-bottom: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-align: right;
+}
+
+@media (min-width: 768px){
+  .navList, .main, .footer{
+    width: 70vw;
+    margin: 0 15vw;
+  }
+
+  h1{
+    font-size: 3rem;
+    margin: 3vh 5vw;
+  }
+
+  .navList__element{
+    font-size: 2rem;
+    font-family: 'Sacramento';
+  }
+
+  .footer{
+    font-size: 0.9rem;
+  }
+
+  p{
+    margin: 16px auto;
+  }
+
+  p, .mainList{
+    font-size: 1rem;
+  }
+
+  .mainList{
+    padding-right: 2vw;
+    margin-left: 2vw;
+  }
+
+  .navList .icon{
+    display: none;
+  }
+
+  .container__image{
+    width: 60%;
+    margin: 10% 20%;
+  }
+
+  .portImage{
+    border-width: 3px;
+  }
+}
+
+@media (min-width: 1024px){
+  .navList, .main, .footer{
+    width: 50vw;
+    margin: 0 25vw;
+  }
+
+  .container__image{
+    margin: 0;
+    width: 34%;
+    float: left;
+  }
+
+  .container__quote{
+    margin-top: 6vh;
+    padding-top: 10vh;
+    text-align: right;
+    padding-right: 0;
+  }
+}

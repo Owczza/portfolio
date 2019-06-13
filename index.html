@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Owczza</title>
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Indie+Flower|Kalam|Pacifico|Sacramento" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.4.2/js/all.js" integrity="sha384-wp96dIgDl5BLlOXb4VMinXPNiB32VYBSoXOoiARzSTXY+tsK8yDTYfvdTyqzdGGN" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <section class="header">     
+      <img src="owca.png" alt="Owca logo"  class="header__logo">
+      <nav role="navigation" class="header__navigation">
+        <ul class="navList">
+          <li class="navList__element"><a onclick="document.getElementById('main__intro').style.display='none'; document.getElementById('main__skills').style.display='none'; document.getElementById('main__hobbies').style.display='none'; document.getElementById('main__portfolio').style.display='none'; document.getElementById('main__about').style.display='block'"><span class="icon"><i class="fas fa-smile-beam"></i><br></span>About me</a></li>
+          <li class="navList__element"><a onclick="document.getElementById('main__intro').style.display='none'; document.getElementById('main__about').style.display='none'; document.getElementById('main__hobbies').style.display='none'; document.getElementById('main__portfolio').style.display='none';document.getElementById('main__skills').style.display='block'"><span class="icon"><i class="fas fa-hammer"></i><br></span>Skills</a></li>
+          <li class="navList__element"><a onclick="document.getElementById('main__intro').style.display='none'; document.getElementById('main__about').style.display='none'; document.getElementById('main__skills').style.display='none'; document.getElementById('main__portfolio').style.display='none'; document.getElementById('main__hobbies').style.display='block'"><span class="icon"><i class="fas fa-hat-wizard"></i><br></span>Hobbies</a></li>
+          <li class="navList__element"><a onclick="document.getElementById('main__intro').style.display='none'; document.getElementById('main__about').style.display='none'; document.getElementById('main__skills').style.display='none'; document.getElementById('main__hobbies').style.display='none'; document.getElementById('main__portfolio').style.display='block'"><span class="icon"><i class="fas fa-book-open"></i><br></span>Portfolio</a></li>
+        </ul>
+      </nav>
+    </section> 
+
+    <main class="main">
+      <div id="main__intro">
+        <h1>Hiya!</h1>
+        <p>My name is Owca. Welcome to my page!</p>
+        <p>If you'd like to know more about me, please click one of the tabs above.</p>
+        <div class="container">
+            <img class="container__image" src="doll.jpg" alt="A photo of the author">
+            <p class="container__quote">"Who in the world am I? Ah, that's the great puzzle."</p>
+            <footer class="container__footer">~ <i>Alice, Alice in Wonderland by Lewis Carroll</i></footer>
+        </div>
+      </div>
+      <div id="main__about">
+        <h1>About Me</h1>
+        <p>So, my real name is Ola, but I prefer to be called Owca (<i>Oftsa</i>, which means 'Sheep' in Polish). It's been my nickname for about 10 years now, and I honestly love it.</p>
+        <p>Born and raised in Gdynia, I'm now 22 years old. Being a daughter of an American immigrant I was quite lucky to start my life off bilingual. Not to mention the amazing travel experiences!</p>
+        <p>I tend to be drawn to the more dark, macabre and grotesque art. There is something so beautifully unnerving about Tim Burton's movies or Tool's music.</p>
+        <p>If you couldn't tell, I'm big on Alice in Wonderland, too.</p>
+        <p>I love memes and doggos, and videogames. One of my most recent "discoveries" is coding and front-end development. I love it so much! I'm attending a course to learn more about it all and I couldn't be happier.</p>
+      </div>
+      <div id="main__skills">
+        <h1>Skills</h1>
+        <ul class="mainList">
+          <li>I'm stupidly good at puting furniture together and fixing mishaps in household objects</li>
+          <li>I can make a mean daiquiri (or any other drink honestly)</li>
+          <li>I'll gladly transform you into a corpse for Halloween, and you'll look drop dead (get it?) gorgeous!</li>
+          <li>I have incredibly good memory, especially with numbers. I'll probably remember your birthday 10 years from now.</li>
+          <li>I'm not awful at videogames, so that's something I guess</li>
+          <li>I can teach older people how to use computers properly</li>
+        </ul>
+      </div>
+      <div id="main__hobbies">
+        <h1>Hobbies</h1>
+        <p>I'm a bit of a Jack of all trades, honestly. I collect hobbies, I'm interested in a lot of things, and I love to pursue knowledge.</p>
+        <p>Some of my hobbies include:
+          <ul class="mainList">
+            <li>Art (painting, drawing, sculpting, ceramics)</li>
+            <li>Music (singing, dancing)</li>
+            <li>Knowledge (cynology, psychology, programming, mythology)</li>
+            <li>Gastronomy (bartending, latte art, cooking, baking, tea)</li>
+            <li>Beauty (make-up, body art, nail-art, hair styling, hair dying, piercing)</li>
+            <li>Physical activities (gym, running, swimming, yoga, stretching)</li>
+            <li>Fashion (sowing, design, stitching, crochet, knitting)</li>
+            <li>Reading (fantasy, r/nosleep, mystery)</li>
+            <li>Gaming (Kingdom Hearts, League of Legends, The Witcher III)</li>
+          </ul>
+        </p>
+      </div>
+      <div id="main__portfolio">
+        <h1>Portfolio</h1>
+        <img class="portImage" src="portfolio1.png" alt="Mint Alice in Wonderland webpage screenshot">
+        <img class="portImage" src="portfolio2.png" alt="Minimalist blue and white invertor relations webpage screenshot">
+        <img class="portImage" src="portfolio3.png" alt="'Coming Soon' webpage screenshot">
+        <img class="portImage" src="portfolio4.png" alt="Unicorn booking webpage screenshot">
+        <img class="portImage" src="portfolio5.png" alt="Minimalist black and white about us webpage screenshot">
+        <img class="portImage" src="portfolio6.png" alt="Pastel portfolio webpage screenshot">
+      </div>
+    </main>
+    <footer class="footer">
+      <b>Shepka</b><br>
+      lambbshep@gmail<br>
+      GitHub: Owczza
+    </footer>
+  </body>
+</html>
